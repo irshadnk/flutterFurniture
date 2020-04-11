@@ -20,6 +20,7 @@ class WishListScreen extends StatelessWidget {
       body: ListView.builder(
         itemBuilder: (ctx, index) {
           return FurnitureItem(
+            id: wishelistItem[index].id,
             title: wishelistItem[index].title,
             imageUrl: wishelistItem[index].imageUrl,
             description: wishelistItem[index].description,
